@@ -1,7 +1,7 @@
-img {
-  max-width: 400px;
+#image {
   border-radius: 5px;
   border: 1px solid black;
+  margin-bottom: 2rem;
 }
 
 #input {
@@ -57,4 +57,22 @@ footer {
 
 .nav-link.active {
   font-weight: 600;
+}
+
+.image-wrapper {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá modal */
+  max-height: 80vh; /* Đặt chiều cao tối đa để các nút không bị che */
+  overflow: hidden; /* Ẩn phần thừa của hình ảnh khi phóng to */
+  position: relative; /* Đảm bảo lớp này chứa hình ảnh khi phóng to */
+}
+
+#lightboxImage {
+  transition: transform 0.3s ease; /* Hiệu ứng phóng to, thu nhỏ */
+  max-width: 100%;
+  max-height: 100%; /* Giới hạn kích thước tối đa của hình ảnh */
+}
+
+.zoom-controls {
+  position: relative;
+  z-index: 10; /* Đảm bảo các nút nằm trên hình ảnh khi phóng to */
 }
