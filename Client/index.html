@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to image</title>
+    <link
+      rel="stylesheet"
+      href="../Client/assets/boostraps/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../Client/assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+
+          <!-- <button class="btn btn-outline-success" type="submit">
+            Đăng nhập
+          </button> -->
+        </div>
+      </nav>
+    </header>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Chuyển văn bản thành hình ảnh</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="mb-3">
+            <label for="input" class="form-label"
+              >Hãy mơ ước, sau đó thêm vào thiết kế của bạn. Xem các từ và cụm
+              từ của bạn biến thành hình ảnh đẹp với trình tạo hình ảnh AI tốt
+              nhất có sẵn trong tầm tay bạn. Nổi bật với hình ảnh hoàn hảo cho
+              dự án của bạn:</label
+            >
+            <div class="position-relative mt-3">
+              <i
+                class="fa-solid fa-magnifying-glass search_icon position-absolute"
+              ></i>
+              <input
+                type="text"
+                class="form-control"
+                id="input"
+                placeholder="Mô tả"
+              />
+              <i
+                class="fa-solid fa-circle-xmark position-absolute remove_input d-none"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 text-center">
+          <button id="btn" class="btn btn-primary mb-3">Tạo ảnh bằng AI</button>
+        </div>
+        <div class="col-lg-5">
+          <img
+            id="image"
+            src="../Client/assets/img/default-featured-image.png.jpg"
+            alt=""
+            class="img-fluid mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            style="cursor: pointer"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal cho lightbox -->
+    <div
+      class="modal fade"
+      id="lightboxModal"
+      tabindex="-1"
+      aria-labelledby="lightboxLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              id="lightboxImage"
+              src="/Client/assets/img/default-featured-image.png.jpg"
+              class="img-fluid"
+              alt="Hình ảnh lớn"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Server/assets/script.js"></script>
+    <script src="../Client/assets/boostraps/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
