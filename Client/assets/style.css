@@ -2,7 +2,10 @@
   border-radius: 5px;
   border: 1px solid black;
   margin-bottom: 1.25rem;
-  
+  max-height: 400px;
+  min-height: 400px;
+  max-width: 400px;
+  min-width: 400px;
 }
 
 #input {
