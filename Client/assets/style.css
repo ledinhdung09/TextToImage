@@ -4,9 +4,10 @@ img {
   border: 1px solid black;
 }
 
-input {
+#input {
   width: 100%;
   padding-left: 35px !important;
+  padding-right: 35px !important;
 }
 
 input:focus {
@@ -18,7 +19,7 @@ input:focus {
 .remove_input {
   font-size: 17px;
   opacity: 0.6;
-  top: 50%;
+  top: 15%;
   right: 2%;
   cursor: pointer;
   padding: 6px;
@@ -33,9 +34,27 @@ input:focus {
 
 .search_icon {
   left: 1%;
-  top: 50%;
+  top: 15%;
   padding: 6px;
   font-size: 17px;
   opacity: 0.6;
   transform: translateY(-50%);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #e9eef1;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.nav-link.active {
+  font-weight: 600;
 }

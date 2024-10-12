@@ -5,7 +5,7 @@ const btn = document.getElementById("btn");
 const clearInput = document.querySelector(".remove_input");
 
 async function query(data) {
-  img.src = "../../../Client/assets/giphy.gif";
+  img.src = "../Client/assets/giphy.gif";
   const response = await fetch(
     "https://api-inference.huggingface.co/models/ZB-Tech/Text-to-Image",
     {
